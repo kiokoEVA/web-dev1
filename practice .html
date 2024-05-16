@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Application Development Lectures</title>
+    <style>
+        .lecture {
+            border: 1px solid black;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .feedback {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Web Application Development Lectures</h1>
+
+    <div class="lecture">
+        <input type="checkbox" id="lecture1" name="lecture1">
+        <label for="lecture1">Lecture 1</label>
+    </div>
+
+    <div class="lecture">
+        <input type="checkbox" id="lecture2" name="lecture2">
+        <label for="lecture2">Lecture 2</label>
+    </div>
+    <div class="lecture">
+        <input type="checkbox" id="lecture3" name="lecture3">
+        <label for="lecture3">Lecture 3</label>
+    </div>
+
+    <!-- Additional lectures can be added here -->
+
+    <div class="feedback">
+        <h2>Give feedback</h2>
+        <form action="/submit-feedback" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(233, 233, 233);
+    /* background-image: url('images/bg/liane.jpg'); */
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.banner{
+    background-color: rgb(83, 81, 78);
+    padding: 20px;
+    text-align: center;
+    color: rgb(233, 233, 233);
+}
+
+.row:after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+
+.footer{
+    background-color: rgb(83, 81, 78);
+    padding: 20px;
+    text-align: center;
+    color: rgb(233, 233, 233);
+}
