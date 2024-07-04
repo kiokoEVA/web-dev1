@@ -3,12 +3,12 @@
     <?php include_once("templates/nav.php"); ?>
 
         <div class="banner">
-            <h1>Welcome</h1> 
+            <h1>Psychology School Supplies: Nurturing Curiosity, Fostering Insight</h1> 
         </div>
         <div class="row">
         <div class="content">
             <h1>Our Products</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>In the corridors of our psychology school, the air hums with anticipation. Students, like fledgling psychologists, clutch their supplies—the keys to unlocking understanding. Let us explore these essential companions, each a silent guide in the quest for knowledge.</p>
                 <table>
                     <tr>
                         <th colspan="2">Item Name</th>
@@ -18,42 +18,42 @@
                     </tr>
                     <tr>
                         <td>1.</td>
-                        <td>Book</td>
+                        <td>sticky note</td>
                         <td>2</td>
                         <td>Ksh 300</td>
                         <td>Ksh 600</td>
                     </tr>
                     <tr>
                         <td>2.</td>
-                        <td>Pen</td>
+                        <td>mental health matter badges</td>
                         <td>5</td>
                         <td>Ksh 20</td>
                         <td>Ksh 100</td>
                     </tr>
                     <tr>
                         <td>3.</td>
-                        <td>Book</td>
+                        <td>stickers</td>
                         <td>2</td>
                         <td>Ksh 300</td>
                         <td>Ksh 600</td>
                     </tr>
                     <tr>
                         <td>4.</td>
-                        <td>Pen</td>
+                        <td>coloring book</td>
                         <td>5</td>
                         <td>Ksh 20</td>
                         <td>Ksh 100</td>
                     </tr>
                     <tr>
                         <td>5.</td>
-                        <td>Book</td>
+                        <td>posters</td>
                         <td>2</td>
                         <td>Ksh 300</td>
                         <td>Ksh 600</td>
                     </tr>
                     <tr>
                         <td>6.</td>
-                        <td>Pen</td>
+                        <td>highliters</td>
                         <td>5</td>
                         <td>Ksh 20</td>
                         <td>Ksh 100</td>

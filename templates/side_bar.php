@@ -1,23 +1,23 @@
 
 <div class="side_bar">
                 <!--Heading 2 starts here-->
-                <h2>Short Stories from Machakos</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h2>Illuminating Minds, Unraveling Souls</h2>
+                <p>This motto encapsulates the essence of psychology—a journey of enlightenment, introspection, and understanding. It invites students to explore the labyrinth of human consciousness, guided by curiosity and compassion.</p>
                 <!--Heading 2 ends here-->
                 <ul>
-                <li>HTML</li>
-                <li>Java</li>
-                <li>JavaScript</li>
-                <li>MySQL</li>
-                <li>PHP</li>
+                <li>Empathetic Silence</li>
+                <li>Verbal Nudges</li>
+                <li>Nonverbal Symphony</li>
+                <li>Active Listening</li>
+                <li>Color Psychology</li>
             </ul>
 
             <ol type="I" start="4">
-                <li>Back</li>
-                <li>Red</li>
-                <li>Yellow</li>
-                <li>Pink</li>
-                <li>White</li>
+                <li>The Therapeutic Alliance</li>
+                <li>The Unfinished Stories</li>
+                <li>The Mirror Effect</li>
+                <li> The Healing Cadence</li>
+                <li>Imagery</li>
             </ol>
 
         </div>

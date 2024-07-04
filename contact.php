@@ -1,28 +1,43 @@
-<?php require_once("includes/db_connect.php"); ?>
+<?php
 
-<?php include_once("templates/heading.php"); ?>
+require_once ("includes/db_connect.php");
+include_once ("templates/heading.php");
+include_once ("templates/nav.php");
 
-<? include_once("templates/nav.php"); ?>
+if(isset($_POST["send_message"])){
+    $fn = $_POST["fullname"];
+    $mail = $_POST["email_address"];
+    $subject = $_POST["subject_line"];
+    $message = $_POST["client_message"];
+
+    $insert_message = "INSERT INTO messages (sender_name, sender_email, subject_line, text_message) VALUES ('$fn', '$mail', '$subject', '$message')";
+
+    if ($conn->query($insert_message) === TRUE) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $insert_message . "<br>" . $conn->error;
+    }
+}
+?>
 
 <div class="banner">
-    <h1>Banner</h1> 
+    <h1>Science Meets Soul</h1> 
 </div>
 
 <div class="row">
 
     <div class="content">
     <h1>Forms</h1>
-    <form action="" method="post" class="contacts_form">
+    <form action="<?php print htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" class="contacts_form">
 
-        <label for="fn">Fullname:</label><br>
-        <input type="text" id="fn" placeholder="Fullname" name="fn"><br><br>
+    <label for="fn">Fullname:</label><br>
+    <input type="text" id="fn" placeholder="Fullname" name="fullname" required><br><br>
 
         <label for="em">Email Address:</label><br>
-        <input type="email" id="em" placeholder="Email Address" name="em"><br><br>
+        <input type="email" id="em" placeholder="Email Address" name="email_address" required><br><br>
         
 
 <br>
-<textarea name="" id="" cols="30" rows="5"></textarea>
 
 <!-- <br><br>
 <select name="" id="">
@@ -32,9 +47,23 @@
     <option value="">Rather not say</option>
 </select> -->
 
-<br><br>
 
-<input type="submit" value="Send Message">
+
+<label for="sb">Subject:</label><br>
+        <select name="subject_line" id="sb"  required>
+            <option value="">---Select Subject-</option>
+            <option value="Email Support">Email Support</option>
+            <option value="eLearning Support">eLearning Support</option>
+            <option value="AMS Support">AMS Support</option>
+
+            </select><br><br>
+
+            <label for="sb">Message:</label><br>  
+
+<textarea name="client_message" id="" cols="30" rows="5" required></textarea><br><br>
+
+        <input type="submit" name="send_message" value="Send Message">
+    </form>
 
 </div>
 
