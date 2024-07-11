@@ -1,5 +1,5 @@
 <div class="footer">
-        Copyright wide mind &copy; Allrights reserved 
+        Copyright wide Mind &copy;<?php print date ("Y"); ?> -All rights reserved 
     </div>
 </body>
 

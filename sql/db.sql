@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 02, 2024 at 06:13 PM
+-- Generation Time: Jul 04, 2024 at 04:26 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -41,6 +41,11 @@ CREATE TABLE IF NOT EXISTS `genders` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Truncate table before insert `genders`
+--
+
+TRUNCATE TABLE `genders`;
+--
 -- Dumping data for table `genders`
 --
 
@@ -48,6 +53,40 @@ INSERT INTO `genders` (`genderId`, `gender`, `datecreated`, `dateupdated`) VALUE
 (1, 'Female', '2024-07-02 19:08:50', '2024-07-02 19:08:50'),
 (2, 'Male', '2024-07-02 19:08:50', '2024-07-02 19:08:50'),
 (3, 'Rather not say', '2024-07-02 19:08:50', '2024-07-02 19:08:50');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `messages`
+--
+
+DROP TABLE IF EXISTS `messages`;
+CREATE TABLE IF NOT EXISTS `messages` (
+  `messageId` bigint(10) NOT NULL AUTO_INCREMENT,
+  `sender_name` varchar(50) DEFAULT NULL,
+  `sender_email` varchar(50) DEFAULT NULL,
+  `subject_line` text DEFAULT NULL,
+  `text_message` text DEFAULT NULL,
+  `datecreated` datetime DEFAULT current_timestamp(),
+  `dateupdated` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`messageId`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Truncate table before insert `messages`
+--
+
+TRUNCATE TABLE `messages`;
+--
+-- Dumping data for table `messages`
+--
+
+INSERT INTO `messages` (`messageId`, `sender_name`, `sender_email`, `subject_line`, `text_message`, `datecreated`, `dateupdated`) VALUES
+(1, 'mueni', 'muein56@gmail.com', 'intake', 'how much is july`s intake', '2024-07-04 17:16:08', '2024-07-04 17:17:24'),
+(2, 'Everlyne Kioko', 'kiokoeverlyn@gmail.com', 'AMS Support', 'cant access my ams', '2024-07-04 17:18:49', '2024-07-04 17:19:54'),
+(3, 'alex', 'alex@gmail.com', 'Email Support', 'my email gets queued', '2024-07-04 17:19:33', '2024-07-04 17:20:18'),
+(4, 'kamau', 'kma@gmail.com', 'AMS Support', 'check marks distribution', '2024-07-04 17:22:06', '2024-07-04 17:23:37'),
+(5, 'wesley', 'wes90@gmail.com', 'intake', 'are you still accepting interviews', '2024-07-04 17:23:20', '2024-07-04 17:23:43');
 
 -- --------------------------------------------------------
 
@@ -65,6 +104,11 @@ CREATE TABLE IF NOT EXISTS `roles` (
   UNIQUE KEY `role` (`role`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Truncate table before insert `roles`
+--
+
+TRUNCATE TABLE `roles`;
 --
 -- Dumping data for table `roles`
 --
@@ -97,7 +141,12 @@ CREATE TABLE IF NOT EXISTS `users` (
   UNIQUE KEY `email` (`email`),
   UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-COMMIT;
+
+--
+-- Truncate table before insert `users`
+--
+
+TRUNCATE TABLE `users`;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

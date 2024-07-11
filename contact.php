@@ -53,7 +53,7 @@ if(isset($_POST["send_message"])){
         <select name="subject_line" id="sb"  required>
             <option value="">---Select Subject-</option>
             <option value="Email Support">Email Support</option>
-            <option value="eLearning Support">eLearning Support</option>
+            <option value="intake">intake</option>
             <option value="AMS Support">AMS Support</option>
 
             </select><br><br>
