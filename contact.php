@@ -6,14 +6,15 @@ include_once ("templates/nav.php");
 
 if(isset($_POST["send_message"])){
     $fn = $_POST["fullname"];
-    $mail = $_POST["email_address"];
+    $mail = mysqli_real_escape_string($conn, $_POST["email_address"]);//sanitize
     $subject = $_POST["subject_line"];
     $message = $_POST["client_message"];
 
     $insert_message = "INSERT INTO messages (sender_name, sender_email, subject_line, text_message) VALUES ('$fn', '$mail', '$subject', '$message')";
 
     if ($conn->query($insert_message) === TRUE) {
-        echo "New record created successfully";
+        header("Location: view_messages.php");
+        exit();
     } else {
         echo "Error: " . $insert_message . "<br>" . $conn->error;
     }
