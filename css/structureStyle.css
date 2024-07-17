@@ -7,10 +7,10 @@ body{
     box-sizing: border-box;
 }
 .banner{
-    background-color: rgb(83, 81, 78);
+    background-color: rgb(240, 29, 103);
     padding: 20px;
     text-align: center;
-    color: rgb(233, 233, 233);
+    color: rgb(15, 3, 42);
 }
 
 .row:after{
